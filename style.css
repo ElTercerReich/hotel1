@@ -1,0 +1,268 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto';    
+}
+
+body{
+    background-color: #007380;
+    color: black
+    
+}
+.containerA{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.headerA{
+    background-color: white;
+    
+}
+.boxS{
+    padding-top: 130px;
+}
+.boxS img{
+  width: 400px;
+  height: 250px;
+   
+}
+
+.containerS{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(16rem,1fr));
+}
+.imagenesPrincipales:hover{
+    transform: scale(1.2);
+    transition: transform .8s;
+}
+#verMas:hover{
+    transform: scale(1.2);
+    transition: transform .8s;
+    background-color: rgb(255, 147, 84);
+}
+#verMas{
+    margin-top: 20px;
+    color: black;
+    background-color: rgb(255, 106, 19);
+    font-size: 15px;
+    display: inline-block;
+    padding: 20px;
+    padding-left: 180px;
+    padding-right: 180px;
+    
+}
+#info{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 142px;
+    padding-right: 142px; 
+}
+
+@keyframes slide {
+	0% { transform: translateX(0); }
+	10% { transform: translateX(0); }
+
+	15% { transform: translateX(-100%); }
+	30% { transform: translateX(-100%); }
+
+	35% { transform: translateX(-200%); }
+	50% { transform: translateX(-200%); }
+
+	55% { transform: translateX(-300%); }
+	70% { transform: translateX(-300%); }
+
+	75% { transform: translateX(-400%); }
+	90% { transform: translateX(-400%); }
+
+	95% { transform: translateX(-500%); }
+	100% { transform: translateX(-500%); }
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+	font-family: sans-serif;
+}
+
+.wrapper {
+	max-width: 420px;
+	margin: 0 auto;
+}
+
+.slider {
+	position: relative;
+}
+
+.slides {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+}
+
+.slide {
+	width: 100vw;
+	flex-shrink: 0;
+	animation-name: slide;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.slides:hover .slide {
+	animation-play-state: paused;
+	
+	
+}
+
+.slide img {
+	width: 100%;
+	vertical-align: top;
+}
+
+.slide a {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+.caption {
+	color: white;
+	text-shadow: 1px 1px black;
+	font-size: 8vw;
+	position: absolute;
+	bottom: 8vw;
+	right: 4vw;
+}
+.slide:target {
+	animation-name: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 50;
+}
+.slider-controler {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	padding: 2px;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 50;
+
+}
+.slider-controler li {
+	margin: 0 0.5rem;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.slider-controler a {
+
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 420px) {
+	.slide {
+		width: 420px;
+	}
+
+	.caption {
+		font-size: 96px;
+		bottom: 96px;
+		right: 50px;
+	}
+}
+
+  /*  CSS reserva aquí */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #007380;
+  }
+  .container {
+    width: 50%;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+  }
+  input[type="text"] {
+	
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #cc0d0d;
+    border-radius: 4px;
+	
+  }
+  input[type="submit"] {
+    width: 100%;
+    background-color: rgb(255, 106, 19);;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: rgb(219, 126, 73);;
+  }
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  .etiquetaDatos{
+	text-align: left;
+  }
+  
+
+  .header-video{
+	text-align: center;
+	margin-bottom: 0;
+	background-color:#d8e9eb;
+	
+  }
+  .bg-video{
+	border-radius: 10px;
+  }
+
+  .pie{
+    margin-top: 80px;
+    font-size: 40px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 100px;
+  }
+  footer{
+    background-color: #000000;
+  }
+	.mapa{
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .contacto{
+    color: white;
+    padding: 10px;
+  }
+	
+
+  
